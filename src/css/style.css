@@ -22,13 +22,14 @@ body {
     border-radius: 20px;
     padding: 5px;
     width: 400px;
-    background-color: rgba(102, 104, 9, 0.6);
-    border: white;
+    background-color: rgba(165, 174, 199, 0.6);
 }
 
-h2 {
-    margin: 0;
-    text-align: center;
+.breed-select {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .is-hidden {
@@ -42,6 +43,11 @@ h2 {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
 }
 
 img {
