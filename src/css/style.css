@@ -1,0 +1,95 @@
+body {
+    background-image: url('/src/img/cats.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cat-info {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 50px 50px;
+    margin: 20px auto 0 auto;
+}
+
+.img-card {
+    width: 500px;
+    margin: 0;
+}
+
+.description {
+    border-radius: 20px;
+    padding: 5px;
+    width: 400px;
+    background-color: rgba(102, 104, 9, 0.6);
+    border: white;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    border-radius: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: azure;
+}
+
+.loader:before {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    margin: auto;
+    background: #de3500;
+    animation: diamondLoader 2s linear infinite;
+}
+
+@keyframes diamondLoader {
+
+    0%,
+    10% {
+        transform: translate(-64px, -64px) rotate(-45deg)
+    }
+
+    90%,
+    100% {
+        transform: translate(0px, 0px) rotate(-45deg)
+    }
+}
