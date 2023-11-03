@@ -18,7 +18,7 @@ function fetchBreeds() {
 }
 
 function fetchCatByBreed(breedId) {
-    const CAT_URL = `https://api.thecatapi.com/v1/images/search?api_key=${API_KEY}&breed_ids=${breedId}`
+    const CAT_URL = `https://api.thecatapi.com/v1/images/search?api_key=${API_KEY}&es/sed_ids=${breedId}`
     return fetch(CAT_URL)
         
         .then(resp => {
